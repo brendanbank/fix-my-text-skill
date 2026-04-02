@@ -43,7 +43,7 @@ If something is ambiguous (a word could go two ways), it flags it rather than gu
 Requires [Claude Code](https://claude.ai/code).
 
 ```bash
-claude skill install https://github.com/bbank/fix-my-text-skill/raw/main/fix-my-text.skill
+claude skill install https://github.com/brendanbank/fix-my-text-skill/raw/main/fix-my-text.skill
 ```
 
 Or download `fix-my-text.skill` and install it manually:
