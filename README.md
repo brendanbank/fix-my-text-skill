@@ -86,4 +86,4 @@ Changes: Fixed spelling: docuemnt → document, yesturday → yesterday, reveiw 
 
 ## License
 
-MIT
+BSD 2-Clause
