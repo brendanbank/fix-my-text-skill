@@ -1,5 +1,6 @@
 ---
 name: fix-my-text
+license: BSD-2-Clause
 description: >
   Corrects spelling, grammar, and sentence construction while preserving the writer's own words, tone, and voice.
   Use this skill whenever the user asks to fix, correct, clean up, or proofread their writing: emails, messages,
