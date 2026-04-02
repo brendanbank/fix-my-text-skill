@@ -40,16 +40,37 @@ If something is ambiguous (a word could go two ways), it flags it rather than gu
 
 ## Installation
 
-Requires [Claude Code](https://claude.ai/code).
+### Claude Desktop App and Mobile App
+
+1. Download [fix-my-text.skill](https://github.com/brendanbank/fix-my-text-skill/releases/download/v0.0.1/fix-my-text.skill)
+2. Open Claude
+3. Go to **Customize > Skills**
+4. Click the **+** button, then **+ Create skill**
+5. Select **Upload a skill**
+6. Upload the downloaded `fix-my-text.skill` file
+
+The skill syncs across all your devices through your Anthropic account.
+
+**Prerequisite:** Make sure **Code execution and file creation** is enabled in **Settings > Capabilities**.
+
+### Claude Web (claude.ai)
+
+Same steps as above:
+
+1. Download [fix-my-text.skill](https://github.com/brendanbank/fix-my-text-skill/releases/download/v0.0.1/fix-my-text.skill)
+2. Go to [claude.ai](https://claude.ai)
+3. Go to **Customize > Skills**
+4. Click the **+** button, then **+ Create skill**
+5. Select **Upload a skill**
+6. Upload the downloaded `fix-my-text.skill` file
+
+### Claude Code (terminal)
 
 ```bash
-claude skill install https://github.com/brendanbank/fix-my-text-skill/raw/main/fix-my-text.skill
-```
-
-Or download `fix-my-text.skill` and install it manually:
-
-```bash
-claude skill install ./fix-my-text.skill
+mkdir -p ~/.claude/skills/fix-my-text
+curl -L https://github.com/brendanbank/fix-my-text-skill/releases/download/v0.0.1/fix-my-text.skill \
+  -o /tmp/fix-my-text.skill
+unzip -o /tmp/fix-my-text.skill -d ~/.claude/skills/
 ```
 
 ## Usage
