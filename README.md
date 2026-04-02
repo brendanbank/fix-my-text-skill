@@ -4,9 +4,9 @@ A [Claude Code skill](https://docs.anthropic.com/en/docs/claude-code/skills) tha
 
 ## Background
 
-I'm dyslexic. I have a lot to say and I know how I want to say it, but the mechanics of spelling and punctuation get in the way. Standard "fix my text" prompts tend to rewrite everything in clean, formal, AI-sounding language — and then it no longer sounds like me.
+Sometimes the mechanics of spelling and punctuation get in the way of what you're trying to say. Standard "fix my text" prompts tend to rewrite everything in clean, formal, AI-sounding language — and then it no longer sounds like you.
 
-I built this skill so Claude corrects the mechanics but leaves my voice alone. If I wrote "stuff", it stays "stuff". If I wrote a casual run-on, it gets cleaned up minimally. The goal is that after correction, the text still reads like something I actually wrote.
+I built this skill so Claude corrects the mechanics but leaves your voice alone. If you wrote "stuff", it stays "stuff". If you wrote a casual run-on, it gets cleaned up minimally. The goal is that after correction, the text still reads like something you actually wrote.
 
 It works especially well for:
 - Emails and Slack messages
@@ -15,7 +15,7 @@ It works especially well for:
 
 ## What it does
 
-- Fixes spelling (including common dyslexic patterns: letter swaps, missing letters, doubled letters)
+- Fixes spelling (letter swaps, missing letters, doubled letters, phonetic spellings)
 - Fixes grammar (subject-verb agreement, tense, articles, punctuation)
 - Capitalises correctly after full stops, proper nouns, and "I"
 - Formats greetings properly (e.g. `hi john, just wanted...` → `Hi John,\nJust wanted...`)
