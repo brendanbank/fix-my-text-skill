@@ -63,18 +63,37 @@ The person writing this text has something to say and a way of saying it. Dyslex
 
 The user of this skill is likely dyslexic, so clear visual separation and scannable formatting are essential. Walls of mixed text are hard to process.
 
-1. First, output ONLY the corrected text. No preamble, no "Here's your corrected text:", just the clean fixed version ready to copy and use.
-2. Then add a blank line followed by a horizontal rule (`---`) to create a clear visual break.
-3. Below the rule, add a `Changes:` heading followed by a bulleted list grouped by type. This structured format is much easier for dyslexic readers to scan than a run-on sentence. Use these groups (only include groups where changes were made):
+### Step 1 — Ask clarifying questions first (if needed)
+
+Before correcting anything, scan the text for vague references that would confuse the reader: unnamed people ("her", "the guy", "them"), unnamed things ("the thing", "the other one", "it"), unnamed systems or places ("the other system", "that tool"), and unclear deadlines ("by then", "soon"). Only flag things a reader would genuinely need to understand the message — don't nitpick.
+
+If you find any, **stop and ask the user first**. Do not produce the corrected text yet. Output only a short intro line and a numbered list of questions, one per line. Wait for the user to answer before continuing.
+
+Example:
+> Before I fix this up, a few quick questions:
+> 1. Who is "her" — who did you speak to?
+> 2. What is "the other thing" blocking the team?
+> 3. What deadline does "by then" refer to?
+
+If the text has no vague references, skip straight to Step 2.
+
+### Step 2 — Output the corrected text
+
+Once you have all the information you need (either because there were no vague references, or the user has answered your questions), produce the corrected text with the clarifications filled in naturally. Then:
+
+1. Output ONLY the corrected text. No preamble, just the clean fixed version ready to copy and use.
+2. Add a blank line followed by a horizontal rule (`---`).
+3. Below the rule, add a `Changes:` heading with a bulleted list grouped by type. Only include groups where changes were made:
    - **Spelling:** list each fix as `original → corrected`
    - **Homophones:** list each fix as `original → corrected`
    - **Missing words:** briefly describe what was added and where
    - **Word order:** briefly describe the transposition fixed
-   - **Grammar:** briefly describe the fix (e.g. "fixed subject-verb agreement: we was → we were")
+   - **Grammar:** briefly describe the fix
    - **Punctuation:** briefly describe what was added or fixed
    - **Capitalisation:** list each fix as `original → Corrected`
-4. If something is ambiguous, if you're not sure what word they meant, or a sentence could be read two ways, flag it with a note rather than guessing. Better to ask than to change their meaning.
-5. Before you output anything, re-read your corrected text carefully and verify that every correction you intend to list in the Changes section is actually applied in the text above it. The corrected text is what the user will copy and use. If a fix is mentioned in the change log but missing from the text, that's a serious problem. Double-check proper noun capitalisation especially (Wednesday not wednesday, John not john, etc.).
+   - **Clarified:** list each vague reference that was replaced, e.g. `"her" → "Lisa"`
+4. If a word is ambiguous (could be read two ways), flag it with a note rather than guessing.
+5. Before outputting, re-read the corrected text and verify every change listed in the Changes section is actually applied. Double-check proper noun capitalisation especially.
 
 ## Examples
 
